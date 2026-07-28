@@ -98,7 +98,7 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 gap-12 items-start mb-12">
             <div>
               <h1 className="text-6xl md:text-7xl font-bold leading-tight mb-6">
-                Full-Stack Engineer building <span className="text-primary">scalable, innovative</span> healthcare systems and AI solutions.
+                Full-Stack Engineer building <span className="text-primary">scalable, innovative</span> systems and AI solutions.
               </h1>
 
               <p className="text-lg text-muted-foreground leading-relaxed mb-8">
@@ -165,22 +165,22 @@ export default function Portfolio() {
               </div>
             </div>
 
-            <div className="flex justify-center md:justify-end">
-              <div className="relative">
+            <div className="flex flex-col items-center md:items-end">
+              <div className="relative mb-6">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent rounded-2xl blur-3xl"></div>
                 <img
-                  src="/profile.png"
+                  src="/profile.jpeg"
                   alt="Emon Bepari"
                   className="relative w-72 h-96 rounded-2xl object-cover border border-border shadow-2xl"
                 />
-                <div className="absolute bottom-4 left-4 right-4 bg-card/80 backdrop-blur-md rounded-lg p-4 border border-border">
-                  <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-2">ENGINEERING FOCUS</p>
-                  <div className="space-y-1">
-                    <p className="text-xs font-semibold text-muted-foreground">Stack</p>
-                    <p className="text-sm text-foreground">React · Next · Node · Python</p>
-                    <p className="text-xs font-semibold text-muted-foreground mt-2">Core</p>
-                    <p className="text-sm text-foreground">Full-Stack · AI/ML · IoT · DSA</p>
-                  </div>
+              </div>
+              <div className="bg-card/80 backdrop-blur-md rounded-lg p-4 border border-border w-72">
+                <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-2">ENGINEERING FOCUS</p>
+                <div className="space-y-1">
+                  <p className="text-xs font-semibold text-muted-foreground">Stack</p>
+                  <p className="text-sm text-foreground">React · Next · Node · Python</p>
+                  <p className="text-xs font-semibold text-muted-foreground mt-2">Core</p>
+                  <p className="text-sm text-foreground">Full-Stack · AI/ML · IoT · DSA</p>
                 </div>
               </div>
             </div>
@@ -252,10 +252,24 @@ export default function Portfolio() {
                 <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
-                <h3 className="font-bold uppercase text-sm tracking-wide">Frontend</h3>
+                <h3 className="font-bold uppercase text-sm tracking-wide">Databases & Backend</h3>
               </div>
               <div className="space-y-2">
-                {['React', 'Next.js', 'Tailwind CSS', 'shadcn/ui', 'TanStack Query'].map(skill => (
+                {['PostgreSQL', 'Redis', 'Neon', 'RAG Architectures', 'REST APIs'].map(skill => (
+                  <p key={skill} className="text-sm text-muted-foreground">{skill}</p>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <div className="flex items-center gap-2 mb-4">
+                <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+                <h3 className="font-bold uppercase text-sm tracking-wide">Frameworks & Tech</h3>
+              </div>
+              <div className="space-y-2">
+                {['Next.js', 'React', 'Node.js', 'Express.js', 'Prisma ORM', 'Tailwind CSS', 'shadcn/ui', 'TanStack Query'].map(skill => (
                   <p key={skill} className="text-sm text-muted-foreground">{skill}</p>
                 ))}
               </div>
@@ -269,7 +283,7 @@ export default function Portfolio() {
                 <h3 className="font-bold uppercase text-sm tracking-wide">Backend</h3>
               </div>
               <div className="space-y-2">
-                {['Node.js', 'Express.js', 'Prisma ORM', 'PostgreSQL', 'FastAPI'].map(skill => (
+                {['PostgreSQL', 'Redis', 'Neon', 'RAG Architectures', 'REST APIs'].map(skill => (
                   <p key={skill} className="text-sm text-muted-foreground">{skill}</p>
                 ))}
               </div>
@@ -280,10 +294,10 @@ export default function Portfolio() {
                 <svg className="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
                 </svg>
-                <h3 className="font-bold uppercase text-sm tracking-wide">Tools & AI</h3>
+                <h3 className="font-bold uppercase text-sm tracking-wide">AI & Developer Tools</h3>
               </div>
               <div className="space-y-2">
-                {['Git & GitHub', 'YOLOv8', 'Stripe', 'Redis', 'Claude AI', 'RAG Systems'].map(skill => (
+                {['Git', 'GitHub Actions', 'Vercel', 'Postman', 'Claude Code', 'Context-Driven Prompt Engineering', 'Stripe'].map(skill => (
                   <p key={skill} className="text-sm text-muted-foreground">{skill}</p>
                 ))}
               </div>
@@ -304,15 +318,15 @@ export default function Portfolio() {
 
           <div className="space-y-8">
             <div className="bg-background border border-border rounded-lg p-8 hover:border-primary/50 transition-all duration-300">
-              <h3 className="text-2xl font-bold mb-2">E-Doctor: Multi-Role Healthcare Platform</h3>
+              <h3 className="text-2xl font-bold mb-2">E-Doctor: A Multi-Role Healthcare System</h3>
               <p className="text-muted-foreground mb-4">
-                End-to-end healthcare system with AI medical assistant, real-time appointments, and secure payments. Built with modern tech stack for scalability and performance.
+                Architected an end-to-end, multi-role healthcare platform featuring an AI medical assistant leveraging RAG and Redis for rapid, context-aware clinical data retrieval.
               </p>
 
               <div className="mb-4">
                 <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Tech Stack</p>
                 <div className="flex flex-wrap gap-2">
-                  {['Next.js', 'Node.js', 'PostgreSQL', 'Prisma', 'Stripe', 'RAG', 'Redis'].map(tech => (
+                  {['Next.js', 'Node.js', 'Express.js', 'TypeScript', 'PostgreSQL', 'Prisma', 'Stripe', 'Better-Auth', 'Redis', 'RAG', 'TanStack Query', 'shadcn/ui'].map(tech => (
                     <span key={tech} className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs border border-primary/30">
                       {tech}
                     </span>
@@ -323,10 +337,8 @@ export default function Portfolio() {
               <div className="mb-4">
                 <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Key Highlights</p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• AI-powered medical assistant with RAG for context-aware clinical data</li>
-                  <li>• Secure authentication & automated appointment notifications</li>
-                  <li>• Stripe webhook integration for seamless payment processing</li>
-                  <li>• High-performance responsive UI with real-time updates</li>
+                  <li>• Engineered secure authentication with Better-Auth, automated background scheduling via cron jobs for appointment notifications, and integrated Stripe webhooks for seamless payment processing.</li>
+                  <li>• Developed responsive, high-performance interfaces using Next.js, TanStack Query, and shadcn/ui, backed by a robust TypeScript, Express.js, and PostgreSQL architecture managed via Prisma ORM.</li>
                 </ul>
               </div>
 
@@ -341,7 +353,7 @@ export default function Portfolio() {
                   Frontend
                 </a>
                 <a
-                  href="https://github.com/Emon143Nerd/healthcare-backend"
+                  href="https://github.com/Emon143Nerd/healthcare-backend.git"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:text-cyan-300 transition-colors text-sm font-medium flex items-center gap-1"
@@ -353,15 +365,15 @@ export default function Portfolio() {
             </div>
 
             <div className="bg-background border border-border rounded-lg p-8 hover:border-primary/50 transition-all duration-300">
-              <h3 className="text-2xl font-bold mb-2">ShasthoAI: Bone Fracture Detection System</h3>
+              <h3 className="text-2xl font-bold mb-2">ShasthoAI: University Final Year Project</h3>
               <p className="text-muted-foreground mb-4">
-                AI-powered diagnostic platform using YOLOv8 for real-time fracture detection with high accuracy. Deployed as integrated healthcare solution.
+                Conceived the project idea and architected system design, building a specialized bone-fracture dataset to train and deploy a YOLOv8 model that surpassed existing legacy model benchmarks.
               </p>
 
               <div className="mb-4">
                 <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Tech Stack</p>
                 <div className="flex flex-wrap gap-2">
-                  {['React', 'Express.js', 'MongoDB', 'YOLOv8', 'FastAPI', 'Python'].map(tech => (
+                  {['React.js', 'Express.js', 'MongoDB Atlas', 'YOLOv8', 'Python FastAPI'].map(tech => (
                     <span key={tech} className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs border border-primary/30">
                       {tech}
                     </span>
@@ -372,16 +384,14 @@ export default function Portfolio() {
               <div className="mb-4">
                 <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Key Highlights</p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Specialized dataset creation and YOLOv8 model training</li>
-                  <li>• Surpassed legacy model benchmarks with improved accuracy</li>
-                  <li>• Real-time healthcare platform integration via FastAPI</li>
-                  <li>• Rigorous system testing and model validation</li>
+                  <li>• Integrated the high-performance AI model service into a real-time healthcare platform via a dedicated Python FastAPI deployment.</li>
+                  <li>• Conducted rigorous system testing and model validation to ensure seamless end-to-end functionality across the web application stack (React.js, Express.js, MongoDB Atlas).</li>
                 </ul>
               </div>
 
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/Emon143Nerd/ShasthoAI-fracture-detection"
+                  href="https://github.com/JamilurRahmanKhan/Shastho-AI-fracture-detection"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:text-cyan-300 transition-colors text-sm font-medium flex items-center gap-1"
@@ -402,15 +412,15 @@ export default function Portfolio() {
             </div>
 
             <div className="bg-background border border-border rounded-lg p-8 hover:border-primary/50 transition-all duration-300">
-              <h3 className="text-2xl font-bold mb-2">PhysioSmart: IoT Wheelchair & Health Monitoring</h3>
+              <h3 className="text-2xl font-bold mb-2">PhysioSmart: Automated Wheelchair & Health Monitoring</h3>
               <p className="text-muted-foreground mb-4">
-                Automated IoT system for medication verification and real-time patient health monitoring. Hardware-software integration for patient safety.
+                Developed an embedded IoT healthcare system integrating a Raspberry Pi camera, automated OCR text extraction, and text-to-speech audio feedback for medication verification.
               </p>
 
               <div className="mb-4">
                 <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Tech Stack</p>
                 <div className="flex flex-wrap gap-2">
-                  {['Python', 'Raspberry Pi', 'OCR API', 'IoT', 'gTTS', 'Hardware Integration'].map(tech => (
+                  {['Python', 'Raspberry Pi', 'OCR.space API', 'gTTS', 'IoT', 'Hardware Integration'].map(tech => (
                     <span key={tech} className="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs border border-primary/30">
                       {tech}
                     </span>
@@ -421,16 +431,14 @@ export default function Portfolio() {
               <div className="mb-4">
                 <p className="text-xs font-semibold text-primary uppercase tracking-wide mb-2">Key Highlights</p>
                 <ul className="space-y-2 text-sm text-muted-foreground">
-                  <li>• Embedded IoT system with Raspberry Pi camera integration</li>
-                  <li>• Automated OCR text extraction and text-to-speech feedback</li>
-                  <li>• Real-time prescription matching and voice alerts</li>
-                  <li>• Hardware-software integration for patient safety</li>
+                  <li>• Programmed modular Python scripts to parse prescription databases, match real-time image scans, and automate voice alerts for patient safety.</li>
+                  <li>• Engineered hardware-software interaction layers managing camera streams, system processes, and external API requests for real-time patient assistance.</li>
                 </ul>
               </div>
 
               <div className="flex gap-4">
                 <a
-                  href="https://github.com/Emon143Nerd/TechNerds_Micro_lab"
+                  href="https://github.com/Emon143Nerd/TechNerds_Micro_lab.git"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:text-cyan-300 transition-colors text-sm font-medium flex items-center gap-1"
@@ -447,7 +455,7 @@ export default function Portfolio() {
       {/* Experience Section */}
       <section id="experience" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <p className="text-primary text-sm font-medium uppercase tracking-wide mb-4">EXPERIENCE</p>
+          <p className="text-primary text-sm font-medium uppercase tracking-wide mb-4">EXPERIENCE & TRAINING</p>
 
           <h2 className="text-5xl md:text-6xl font-bold mb-12">Professional Experience</h2>
 
@@ -455,26 +463,28 @@ export default function Portfolio() {
             <div className="bg-card border border-border rounded-lg p-8">
               <div className="flex justify-between items-start mb-4">
                 <div>
-                  <h3 className="text-xl font-bold">Research Assistant</h3>
-                  <p className="text-primary font-medium">United International University</p>
+                  <h3 className="text-xl font-bold">Web Development Trainee</h3>
+                  <p className="text-primary font-medium">Programming Hero Level 2</p>
                 </div>
-                <span className="text-sm text-muted-foreground">2024 - Present</span>
+                <span className="text-sm text-muted-foreground">Oct 2025 - May 2026</span>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                Contributing to IoT Lab research projects focusing on healthcare automation and embedded systems. Developing innovative solutions for real-time health monitoring and medical device integration.
+                - Practiced professional web development workflows and industry coding standards.
+                - Designed and developed full-stack applications exploring both MERN and PERN stacks.
               </p>
             </div>
 
             <div className="bg-card border border-border rounded-lg p-8">
               <div className="flex justify-between items-start mb-4">
                 <div>
-                  <h3 className="text-xl font-bold">Full-Stack Developer Intern</h3>
-                  <p className="text-primary font-medium">Healthcare Startup</p>
+                  <h3 className="text-xl font-bold">Undergraduate Teaching Assistant (UGA) and Researcher</h3>
+                  <p className="text-primary font-medium">Network and IoT Lab, United International University</p>
                 </div>
-                <span className="text-sm text-muted-foreground">2023 - 2024</span>
+                <span className="text-sm text-muted-foreground">Dec 2024 - Jun 2025</span>
               </div>
               <p className="text-muted-foreground leading-relaxed">
-                Developed and maintained full-stack healthcare applications using Next.js and Node.js. Implemented secure payment processing with Stripe and real-time features with WebSockets.
+                - Developed innovative hardware IoT projects and structured comprehensive GitHub repositories to support departmental resources and university initiatives.
+                - Assisted faculty and students with laboratory sessions, troubleshooting hardware-software integrations, and guiding project development in networking and IoT.
               </p>
             </div>
           </div>
@@ -492,16 +502,38 @@ export default function Portfolio() {
             <div className="bg-background border border-border rounded-lg p-8">
               <div className="flex justify-between items-start mb-4">
                 <div>
-                  <h3 className="text-xl font-bold">B.Sc. in Computer Science & Engineering</h3>
+                  <h3 className="text-xl font-bold">B.Sc. in Computer Science & Engineering (CSE)</h3>
                   <p className="text-primary font-medium">United International University</p>
                 </div>
-                <span className="text-sm text-muted-foreground">Expected: March 2026</span>
+                <span className="text-sm text-muted-foreground">Nov 2021 - March 2026</span>
               </div>
               <div className="space-y-2 text-muted-foreground">
-                <p>CGPA: 3.91/4.0</p>
-                <p>100% & 50-75% Scholarship throughout university</p>
-                <p>Champions Award in Electronics Lab - IoT shuttle service project</p>
-                <p>First Runner-up in Microprocessors Lab - Smart wheelchair project</p>
+                <p>CGPA: 3.91 / 4.00</p>
+                <p>100% scholarships in 6 trimesters, rest are 50%/25%</p>
+              </div>
+            </div>
+            <div className="bg-background border border-border rounded-lg p-8">
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <h3 className="text-xl font-bold">Higher Secondary Certificate (HSC), Science</h3>
+                  <p className="text-primary font-medium">Amirjan College</p>
+                </div>
+                <span className="text-sm text-muted-foreground">2020</span>
+              </div>
+              <div className="space-y-2 text-muted-foreground">
+                <p>GPA: 4.83 / 5.00</p>
+              </div>
+            </div>
+            <div className="bg-background border border-border rounded-lg p-8">
+              <div className="flex justify-between items-start mb-4">
+                <div>
+                  <h3 className="text-xl font-bold">Secondary School Certificate (SSC), Science</h3>
+                  <p className="text-primary font-medium">Mohammadpur Govt. High School</p>
+                </div>
+                <span className="text-sm text-muted-foreground">2018</span>
+              </div>
+              <div className="space-y-2 text-muted-foreground">
+                <p>GPA: 4.89 / 5.00</p>
               </div>
             </div>
           </div>

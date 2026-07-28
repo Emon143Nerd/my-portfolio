@@ -1,0 +1,254 @@
+\documentclass[a4paper,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+\usepackage[hidelinks]{hyperref}
+\usepackage[most]{tcolorbox}
+
+\definecolor{darkblue}{RGB}{0,0,139}
+
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{5pt}
+
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% ---- IMPORTANT: remove paragraph indentation everywhere
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% ----------------- Custom commands -----------------
+
+% Truly marginless, bullet-less list container
+\newcommand{\resumeSubHeadingListStart}{%
+\begin{itemize}[
+  leftmargin=0pt,
+  itemindent=0pt,
+  label={},
+  labelsep=0pt,
+  itemsep=2mm,
+  topsep=0mm,
+  parsep=0mm,
+  partopsep=0mm
+]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{1mm}}
+
+\newcommand{\resumeSubheading}[4]{%
+\vspace{0.6mm}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} & \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-1.6mm}
+}
+
+\newcommand{\resumeProject}[4]{%
+\vspace{0.6mm}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-1.6mm}
+}
+
+\newcommand{\resumeExperience}[5]{%
+\vspace{0.6mm}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#3} \\
+        & \footnotesize{#5}
+    \end{tabular*}
+    \vspace{-1.6mm}
+}
+
+% --- FIX: strip leading/trailing whitespace so lines start flush-left
+\newcommand{\detailLines}[1]{%
+\vspace{0.6mm}%
+{\footnotesize\ignorespaces #1\unskip\par}%
+\vspace{0.6mm}%
+}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    {\Huge\textbf{\MakeUppercase{Emon Bepari}}}\\[4pt]
+    \small{
+    \faPhone*~+8801630175225 \ \textbar\ 
+    \faEnvelope~\href{mailto:emon99284@gmail.com}{emon99284@gmail.com} \ \textbar\ 
+    \faGlobe~\href{https://your-portfolio-url.com}{Emon's Portfolio} \ \textbar\ 
+    \faGithub~\href{https://github.com/Emon143Nerd}{Emon143Nerd} \ \textbar\ 
+    \faLinkedin~\href{https://www.linkedin.com/in/emon-bepari}{Emon Bepari}
+    }\\[2pt]
+    \small{Present Address: Dhaka, Bangladesh}
+\end{center}
+
+% ---------- SUMMARY ----------
+\vspace{-2mm}
+\small{
+  Software engineer building multi-role and real time systems, and developing ML prototypes.
+}
+\vspace{1mm}
+
+% ---------- EDUCATION ----------
+\section{Education}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{B.Sc. in Computer Science \& Engineering (CSE)}{Dhaka, Bangladesh}
+{United International University}{Nov 2021 -- March 2026}
+\detailLines{CGPA: 3.91 / 4.00 \,|\, 100\% scholarships in 6 trimesters, rest are 50\%/25\%}
+
+\resumeSubheading
+{Higher Secondary Certificate (HSC), Science}{Dhaka, Bangladesh}
+{Amirjan College}{2020}
+\detailLines{GPA: 4.83 / 5.00}
+
+\resumeSubheading
+{Secondary School Certificate (SSC), Science}{Dhaka, Bangladesh}
+{Mohammadpur Govt. High School}{2018}
+\detailLines{GPA: 4.89 / 5.00}
+
+\resumeSubHeadingListEnd
+
+% ---------- EXPERIENCE & TRAINING ----------
+\section{Experience \& Training}
+\resumeSubHeadingListStart
+
+\resumeExperience
+{Web Development Trainee}
+{Programming Hero Level 2}
+{Dhaka, Bangladesh}
+{Oct 2025 -- May 2026}
+
+\detailLines{
+- Practiced professional web development workflows and industry coding standards.\par
+- Designed and developed full-stack applications exploring both MERN and PERN stacks.
+}
+\par
+\
+
+{\textbf{Undergraduate Teaching Assistant (UGA) and Researcher}}
+
+{Network and IoT Lab, United International University}
+
+{Dhaka, Bangladesh}
+{Dec 2024 -- Jun 2025}
+{}
+
+
+\detailLines{
+
+- Developed innovative hardware IoT projects and structured comprehensive GitHub repositories to support departmental resources and university initiatives.\
+- Assisted faculty and students with laboratory sessions, troubleshooting hardware-software integrations, and guiding project development in networking and IoT.
+}
+
+
+\resumeSubHeadingListEnd
+
+
+% ---------- PROJECTS ----------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeProject
+{E-Doctor: A Multi-Role Healthcare System}
+{Next.js, Node.js, Express.js, TypeScript, PostgreSQL, Prisma, Stripe, Better-Auth, Redis, RAG, TanStack Query, shadcn/ui}
+{2026}
+{[\href{https://github.com/Emon143Nerd/healthcare-backend.git}{\textcolor{darkblue}{\faGithub}} \ \href{https://github.com/Emon143Nerd/e-doctor-frontend}{\textcolor{darkblue}{\faGithub}}]}
+\detailLines{
+  - Architected an end-to-end, multi-role healthcare platform featuring an AI medical assistant leveraging RAG and Redis for rapid, context-aware clinical data retrieval.\
+  - Engineered secure authentication with Better-Auth, automated background scheduling via cron jobs for appointment notifications, and integrated Stripe webhooks for seamless payment processing.\
+  - Developed responsive, high-performance interfaces using Next.js, TanStack Query, and shadcn/ui, backed by a robust TypeScript, Express.js, and PostgreSQL architecture managed via Prisma ORM.\
+}
+
+\resumeProject
+  {ShasthoAI: University Final Year Project}
+  {Tech: React.js, Express.js, MongoDB Atlas, YOLOv8, Python FastAPI}
+  {2026}
+  {[\href{https://github.com/JamilurRahmanKhan/Shastho-AI-fracture-detection}{\textcolor{darkblue}{\faGithub}} \, 
+    \href{https://shastho-ai-fracture-detection-clien.vercel.app/}{\textcolor{darkblue}{\faExternalLink*}} \, 
+    \href{https://github.com/Emon143Nerd/grazpedwri_project.git}{\textcolor{darkblue}{\faGithub}}]}
+\detailLines{
+
+- Conceived the project idea and architected system design, building a specialized bone-fracture dataset to train and deploy a YOLOv8 model that surpassed existing legacy model benchmarks.\
+- Integrated the high-performance AI model service into a real-time healthcare platform via a dedicated Python FastAPI deployment.\
+- Conducted rigorous system testing and model validation to ensure seamless end-to-end functionality across the web application stack (React.js, Express.js, MongoDB Atlas).\
+}
+
+
+\resumeProject
+{PhysioSmart: Automated Wheelchair \& Health Monitoring}
+{Tech: Python, Raspberry Pi, OCR.space API, gTTS, IoT, Hardware Integration}
+{2024}
+{[\href{https://github.com/Emon143Nerd/TechNerds_Micro_lab.git}{\textcolor{darkblue}{\faGithub}}]}
+\detailLines{
+
+- Developed an embedded IoT healthcare system integrating a Raspberry Pi camera, automated OCR text extraction, and text-to-speech audio feedback for medication verification.\
+
+-Programmed modular Python scripts to parse prescription databases, match real-time image scans, and automate voice alerts for patient safety.\
+
+-Engineered hardware-software interaction layers managing camera streams, system processes, and external API requests for real-time patient assistance.
+}
+
+\resumeSubHeadingListEnd
+
+% ---------- SKILLS ----------
+\section{Skills}
+\noindent\small
+\textbf{Languages:} JavaScript, TypeScript, Python, C++, SQL \\
+\textbf{Frameworks \& Tech:} Next.js, React, Node.js, Express.js, Prisma ORM, Tailwind CSS, shadcn/ui, TanStack Query \\
+\textbf{Databases \& Backend:} PostgreSQL, Redis, Neon, RAG Architectures, REST APIs \\
+\textbf{AI \& Developer Tools:} Git, GitHub Actions, Vercel, Postman, Claude Code, Context-Driven Prompt Engineering, Stripe
+\par\vspace{2mm}
+
+% ---------- AWARDS ----------
+\section{Awards & Achievements}
+\noindent\small
+
+- Secured 100\% scholarships most of the time and 50\% for a few trimesters.
+
+- Won Champions Award in electronics lab for the automated shuttle service IoT project
+
+- Won first runner-up award in microprocessors lab for the smart wheelchair project with an integrated medicine detection system and real-time patient health monitoring using AI and IoT
+
+\par\vspace{2mm}
+
+\par\vspace{2mm}
+
+
+% ---------- REFERENCES ----------
+\section{References}
+\noindent\small
+Dr. Suman Ahmmed \\
+Head and Associate Professor, Dept. of CSE \& Director, CDIP \\
+United International University (UIU) \\
+Email: \href{mailto:suman@cse.uiu.ac.bd}{suman@cse.uiu.ac.bd}, \href{mailto:suman@uiu.ac.bd}{suman@uiu.ac.bd}
+\vspace{2mm}\\
+Mr. Md. Tarek Hasan \\
+Lecturer, Dept. of CSE \\
+United International University (UIU) \\
+Email: \href{mailto:tarek@cse.uiu.ac.bd}{tarek@cse.uiu.ac.bd}
+\par
+
+\end{document}
